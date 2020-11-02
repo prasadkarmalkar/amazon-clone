@@ -1,0 +1,24 @@
+.basketproduct{
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+    height: 150px;
+}
+.basketproduct__image{
+    height: 150px;
+    object-fit: contain;
+}
+.basketproduct__right{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-between;
+}
+.basketproduct__removebtn{
+    margin: auto;
+    background-color: #fac14f;
+    border: 1px solid #c29100;
+    color: #111;
+    padding: 5px 10px;
+}

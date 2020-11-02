@@ -1,0 +1,11 @@
+.payment > h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.payment__div{
+    display: flex;
+}
+.payment__left{
+    margin-left: 10px;
+}
