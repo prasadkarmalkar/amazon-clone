@@ -31,14 +31,18 @@ function Payment() {
         // generate the special stripe secret which allows us to charge a customer
         const getClientSecret = async () => {
             const response = await axios({
-                method: 'post',
+                method: 'get',
                 // Stripe expects the total in a currencies subunits
                 url: `/payments/create?total=${total * 100}`
             });
             setClientSecret(response.data.clientSecret)
         }
 
-        getClientSecret();
+        getClientSecret().then(()={
+
+        }).catch(()=>{
+            alert('Something Went Wrong')
+        });
     }, [basket])
 
 console.log(clientSecret)
