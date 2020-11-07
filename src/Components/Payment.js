@@ -38,11 +38,7 @@ function Payment() {
             setClientSecret(response.data.clientSecret)
         }
 
-        getClientSecret().then(()={
-
-        }).catch(()=>{
-            alert('Something Went Wrong')
-        });
+ 
     }, [basket])
 
 console.log(clientSecret)
